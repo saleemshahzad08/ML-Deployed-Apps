@@ -22,7 +22,7 @@ import requests
 # FastAPI Backend URL
 # ==========================================================
 
-API_URL = "https://titanic-survival-api-oisr.onrender.com"
+API_URL = "https://titanic-survival-api-oisr.onrender.com/predict"
 
 # ----------------------------------------------------------
 # App Title
