@@ -165,29 +165,12 @@ st.dataframe(input_data)
 # ----------------------------------------------------------
 
 if st.button("Predict"):
-
-    # Predict survival.
     prediction = model.predict(input_data)[0]
-
-    # Predict probability.
     probability = model.predict_proba(input_data)[0]
-
     st.subheader("Prediction Result")
-
     if prediction == 1:
-
         st.success("🎉 The passenger is predicted to SURVIVE.")
-
-        st.write(
-            f"**Probability of Survival:** "
-            f"{probability[1]:.2%}"
-        )
-
+        st.write(f"**Probability of Survival:** {probability[1]:.2%}")
     else:
-
         st.error("❌ The passenger is predicted NOT to survive.")
-
-        st.write(
-            f"**Probability of Survival:** "
-            f"{probability[0]:.2%}"
-        )
+        st.write(f"**Probability of Survival:** {probability[0]:.2%}")
