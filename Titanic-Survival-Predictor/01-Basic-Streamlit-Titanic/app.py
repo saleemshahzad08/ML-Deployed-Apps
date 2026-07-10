@@ -174,3 +174,4 @@ if st.button("Predict"):
     else:
         st.error("❌ The passenger is predicted NOT to survive.")
         st.write(f"**Probability of Survival:** {probability[0]:.2%}")
+        st.write(print(probability))
