@@ -21,7 +21,7 @@ import requests
 # FastAPI Backend URL
 # ==========================================================
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://titanic-survival-api-qf2u.onrender.com/predict"
 
 # ----------------------------------------------------------
 # App Title
